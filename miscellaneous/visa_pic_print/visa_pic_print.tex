@@ -1,0 +1,22 @@
+\documentclass{article}
+\usepackage[paperwidth=15cm, paperheight=23cm, margin=1cm]{geometry}
+\usepackage{xcolor}
+
+\pagecolor{lightgray} % Set the page color to light gray
+
+\usepackage{graphicx}
+
+\setlength{\fboxrule}{0px} % Set fbox line thickness to 1px
+\setlength{\fboxsep}{0pt} % Set padding between box and content to 0
+
+\newcommand{\persona}{\fbox{\includegraphics[width=2in, height=2in]{example-grid-100x100pt}}}
+\newcommand{\personb}{\fbox{\includegraphics[width=2in, height=2in]{example-image-10x16}}}
+
+\begin{document}
+    \thispagestyle{empty}
+
+    \begin{tabular}{cc}
+        \persona & \persona \\ \vspace{0px} \\
+        \personb & \personb \\ \vspace{0px} 
+    \end{tabular}
+\end{document}
