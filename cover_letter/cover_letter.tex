@@ -1,0 +1,68 @@
+\documentclass[11pt, a4paper]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{fontawesome}
+\usepackage{hyperref}
+\usepackage[dvipsnames]{xcolor}
+\newcommand{\green}[1]{\textcolor{ForestGreen}{#1}}
+\newcommand{\tick}{\green{\faCheckCircle}}
+\newcommand{\name}{Blank}
+\newcommand{\role}{Role}
+\newcommand{\company}{Company}
+\newcommand{\coverletterheader}{\hrule
+    \begin{center}
+        \large Cover Letter\\
+        \Large\textbf{\role} $\bullet$ \company\\
+        \large\name~$\bullet$~\today\\
+        \normalsize
+    \end{center}
+    \hrule\bigskip
+}
+\newenvironment{skills}[1]{\paragraph{\textsf{#1}}\begin{itemize}\setlength\itemsep{0em}}{\end{itemize}}
+\hypersetup{colorlinks=true,linkcolor=blue,urlcolor=blue}
+
+\renewcommand{\name}{Name}
+\renewcommand{\role}{Role}
+\renewcommand{\company}{Company}
+
+\begin{document}
+
+\fontfamily{lmss}\selectfont
+
+\thispagestyle{empty}
+
+\coverletterheader
+
+\noindent Hi,
+
+\medskip
+I am a [student] from [university] with a focus on [topics, areas]. 
+[relevant experience in short]
+
+\medskip
+
+[relevant experience as a paragraph]
+
+\medskip
+
+[why company. Can use \role~and \company~as macros]
+
+\medskip
+
+[closing statements]
+
+\medskip
+
+\noindent Best,
+
+\noindent \name
+
+\vfill
+
+\hrule
+
+\begin{skills}{Requirements}
+    \item[\tick] BS, \green{MS} and PhD in computer science, \green{robotics}, electrical/mechanical/aerospace engineering, or a related field.
+    \item \green{5+ years} of experience designing and developing software applications using C++ in the industry
+\end{skills}
+
+\end{document}
