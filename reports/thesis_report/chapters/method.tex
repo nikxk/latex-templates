@@ -1,0 +1,95 @@
+\chapter{Methodology}
+\label{chap:method}
+
+\section{Writing text}
+\label{sec:meth/text}
+
+Text can be written with:
+\begin{itemize}
+    \item \texttt{typewriter} font
+    \item \textsf{sans serif} font
+    \item \textit{italic} font
+    \item \textbf{boldface} font
+    \item \emph{emphasis} font
+\end{itemize}
+
+That is a unnumbered list. You can also write a numbered list:
+\begin{enumerate}
+    \item First item
+    \item Second item
+    \item Third item
+\end{enumerate}
+
+You can also write a description list:
+\begin{description}
+    \item[Accumulated input stream] Would provide inconsistent ground truth across \break frames for terrain that is newly explored
+    \item[Initially mapped out environments] This would involve the need for a wide variety of terrains (large datasets available) or a lot of manual work in mapping out terrains.
+\end{description}
+
+\subsection{Introduction}
+\label{ssec:meth/text/intro}
+
+\subsubsection{Subsubsection}
+
+\paragraph{Paragraph}
+Citations can be made as \citep{Heisenberg1983} or \citet{Heisenberg1983}. Multiple citations can be made together as \citep{Heisenberg1983,Einstein1905} Links to webpages as \url{https://www.google.com} or \href{https://www.google.com}{Google}. 
+
+Links to figures, tables and sections can be made using \cref{fig:network_archs}, \cref{tab:terrain_params} and \cref{ssec:meth/text/intro} respectively. You can also refer to equations as \cref{eq:example_equation}. \Cref{tab:terrain_params} can be used at the beginning of a sentence. 
+
+Math inline can be written as $x^2 + y^2 = z^2$ or in display mode as
+\begin{equation}
+    x^2 + y^2 = z^2
+    \label{eq:example_equation}
+\end{equation}
+or in a code block as
+\begin{verbatim}
+x^2 + y^2 = z^2
+\end{verbatim}
+
+\begin{table}
+    \centering
+    \begin{tabular}{|c|c|}
+        \hline
+        \textbf{Terrain Part} & \textbf{Specification} \\ \hline
+        Wall & height=$3.0$ m \\
+        Platforms & of heights $ \in \left\{0.0, 0.5, 1.0, 1.5, 2.0\right\} $\\
+        Stairs & within heights $ \in \left\{0.0, 0.5, 1.0, 1.5, 2.0\right\} $\\
+        Ramps & within heights $ \in \left\{0.0, 0.5, 1.0, 1.5, 2.0\right\} $\\
+        \hline
+    \end{tabular}
+    \caption{Specifications of terrain parts}
+    \label{tab:terrain_params}
+\end{table}
+
+\begin{figure}[btph]
+    \centering
+    \begin{subfigure}[b]{0.47\linewidth}
+        \centering
+        \includegraphics[width=0.8\linewidth]{example-image-a}
+        \caption{Convolutional Autoencoder (CAE)}
+        \label{fig:conv_arch}
+    \end{subfigure}
+    \hfill
+    \begin{subfigure}[b]{0.47\linewidth}
+        \centering
+        \includegraphics[width=0.8\linewidth]{example-image-b}
+        \caption{CAE with Memory}
+        \label{fig:convmem_arch}
+    \end{subfigure}
+    \\
+    \begin{subfigure}[b]{0.47\linewidth}
+        \centering
+        \includegraphics[width=0.8\linewidth]{example-image-c}
+        \caption{CAE with Transformed Output}
+        \label{fig:davidu_arch}
+    \end{subfigure}
+    \hfill
+    \begin{subfigure}[b]{0.47\linewidth}
+        \centering
+        \includegraphics[width=0.8\linewidth]{example-image}
+        \caption{CAE with Transformed Latent}
+        \label{fig:convmemtr_arch}
+    \end{subfigure}
+    \caption{Network architectures considered}
+    \label{fig:network_archs}
+\end{figure}

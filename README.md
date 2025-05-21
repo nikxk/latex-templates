@@ -5,11 +5,11 @@ Templates for common $\LaTeX$ documents
 
 ### Simple documents
 
-- [Cover Letter](./cover_letter)
-
-  A simple cover letter for a job application, where you can also state your fit to the requirements.
+- [Cover Letter](./cover_letter) for job applications
 
 ### Reports
+
+- [Thesis Report](./reports/thesis_report/) for academic theses
 
 ### Beamer Presentations
 
@@ -23,5 +23,4 @@ Templates for common $\LaTeX$ documents
 ### Miscellaneous
 
 - [Printout of images](./miscellaneous/image_printout/)
-
 - [Printout of passport size images](./miscellaneous/visa_pic_print/)
