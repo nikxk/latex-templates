@@ -1,0 +1,111 @@
+\documentclass[10pt]{article}
+\usepackage[top=1.2in,bottom=1.2in,left=0.75in,right=0.75in]{geometry}
+\usepackage[utf8]{inputenc}
+\usepackage{fancyhdr}
+\usepackage{amsmath}
+\usepackage{graphicx}
+\usepackage{hyperref}
+\usepackage{multirow}
+\usepackage{xcolor}
+\usepackage{cleveref}
+
+\hypersetup{
+    colorlinks=true,
+    linkcolor=blue,   
+    urlcolor=cyan,
+}
+
+% place images in the folder 'images'
+\graphicspath{{images/}}
+
+% details of people involved
+\newcommand{\nameA}{Person A}
+\newcommand{\nameB}{Person B}
+\newcommand{\nameC}{Person C}
+\newcommand{\idA}{PID A}
+\newcommand{\idB}{PID B}
+\newcommand{\idC}{PID C}
+\newcommand{\mailA}{personA@example.com}
+\newcommand{\mailB}{personB@example.com}
+\newcommand{\mailC}{personC@example.com}
+
+
+\newcommand{\teamID}{Group 11}
+\newcommand{\projecttitle}{Exercise Project}
+\newcommand{\projectsubtitle}{Course name}
+
+\newcommand{\alert}[1]{\textcolor{red}{\textbf{#1}}}
+
+\fancypagestyle{first}{
+\fancyhf{}
+\lhead{\textsc{\teamID}}
+\rhead{\small{\today}}
+\cfoot{\thepage}}
+
+\pagestyle{fancy}
+\fancyhead[L]{\projecttitle}
+\fancyhead[R]{\textsl{\projectsubtitle}}
+\fancyfoot[R]{\textsf{\teamID}}
+
+
+\renewcommand{\headrulewidth}{0.3pt}
+\renewcommand{\footrulewidth}{0.3pt}
+\setlength{\headheight}{15pt}
+
+\begin{document}
+\thispagestyle{first}
+
+\begin{center}
+    \textsf{
+        \huge{\projecttitle}\\[3pt]
+        \Large \projectsubtitle\\[15pt]
+        \large
+        \begin{tabular}{lccc}
+        \multirow{3}{*}{\fbox{\teamID}} & \textbf{\nameA} & \textbf{\nameB} & \textbf{\nameC} \\
+                          & \idA            & \idB          & \idC           \\
+                          & \mailA            & \mailB     & \mailC     
+        \end{tabular}
+    }
+\normalsize
+\vspace{10pt}
+
+\noindent\rule{\textwidth}{0.3pt}
+\end{center}
+
+\begin{abstract}
+    Short abstract of the project.
+\end{abstract}
+
+\section{Introduction}
+
+Intro here.
+
+\section{Method}
+
+\subsection{Method subsection}
+
+We refer to \cite{nilsson_thorstensson_1987}. We can also refer to the image in \cref{fig:full_act}.
+
+
+\begin{figure}[hbtp]
+    \centering
+    \includegraphics[width=0.6\linewidth,trim=10 20 10 20,clip]{example-image-a}
+    \caption{Trimmed image. Trimming goes as follows: left, bottom, right, top.}
+    \label{fig:full_act}
+\end{figure}
+
+\section{Conclusion}
+
+Conclusion here.
+
+\bibliographystyle{plain}
+\bibliography{reference}
+
+\begin{center}
+    $\diamond$
+
+    \scriptsize
+    % The files can be found at \url{github.url.here}.
+\end{center}
+
+\end{document}
