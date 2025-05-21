@@ -6,7 +6,8 @@ Templates for common $\LaTeX$ documents
 Beamer: [Theme Matrix](https://mpetroff.net/files/beamer-theme-matrix/) | [Beamer user guide](https://tug.ctan.org/macros/latex/contrib/beamer/doc/beameruserguide.pdf)
 
 ### Simple documents
-- [Cover Letter](./cover_letter) for job applications
+- [Cover Letter](./simple_docs/cover_letter) for job applications
+- [Letter](./simple_docs/letter) for mailing
 
 ### Reports
 - [Short Report](./reports/short_report/)
@@ -16,6 +17,5 @@ Beamer: [Theme Matrix](https://mpetroff.net/files/beamer-theme-matrix/) | [Beame
 - [Sample Presentation](./ppt/)
 
 ### Miscellaneous
-
 - [Printout of images](./miscellaneous/image_printout/)
 - [Printout of passport size images](./miscellaneous/visa_pic_print/)

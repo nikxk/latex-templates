@@ -1,0 +1,38 @@
+\documentclass[a4paper]{letter}
+
+\usepackage{graphicx}
+
+\newcommand{\sendername}{Name}
+
+
+\address{
+    Apartment No.\\
+    Street number\\
+    PO number place
+}
+
+\signature{\sendername}
+
+\begin{document}
+\fontfamily{lmss}\selectfont
+
+\begin{letter}{
+    Destination\\
+    Street number\\
+    PO number place
+    }
+    \opening{Dear Madam/Sir,}
+
+    \begin{center}
+    \underline{\textbf{Subject: Subject}}
+    \end{center}
+
+    I am \sendername, and I want to do something something.
+
+    \closing{Yours sincerely,
+    
+    \includegraphics[width=2.6cm]{example-image}\vspace{-1cm}}
+
+\end{letter}
+
+\end{document}
