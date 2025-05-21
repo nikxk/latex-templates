@@ -6,16 +6,14 @@ Templates for common $\LaTeX$ documents
 Beamer: [Theme Matrix](https://mpetroff.net/files/beamer-theme-matrix/) | [Beamer user guide](https://tug.ctan.org/macros/latex/contrib/beamer/doc/beameruserguide.pdf)
 
 ### Simple documents
-
 - [Cover Letter](./cover_letter) for job applications
 
 ### Reports
-
 - [Short Report](./reports/short_report/)
 - [Thesis Report](./reports/thesis_report/) for academic theses
 
 ### Beamer Presentations
-
+- [Sample Presentation](./ppt/)
 
 ### Miscellaneous
 

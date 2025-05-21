@@ -1,0 +1,97 @@
+\documentclass[aspectratio=169]{beamer} % can change aspect ratio to 32, 43, 1610 ...
+\mode<presentation>
+\usepackage[final]{animate} % draft otherwise to not compile the gifs
+\usepackage{fontawesome}
+\usepackage[dvipsnames]{xcolor}
+
+\usetheme{Hannover}
+\usecolortheme{spruce}
+\usefonttheme[onlymath]{serif}
+
+\graphicspath{{images/} {gifs/}}
+
+\setbeamertemplate{navigation symbols}{\insertframenavigationsymbol\insertsubsectionnavigationsymbol\usebeamerfont{footline}\hspace{1em}\color{blue}\insertframenumber}
+
+\title{Title}
+\author{Name}
+\date{\today}
+
+\begin{document}
+\begin{frame}
+    \titlepage
+\end{frame}
+
+\section{Section}
+
+\subsection{Subsection}
+
+\begin{frame}{Frametitle}{Undertitle}
+
+\begin{columns}
+    \column{0.5\textwidth}
+        \begin{itemize}
+            \item \alert{Itemize}
+            \begin{itemize}
+                \item \structure{Nested itemize}
+            \end{itemize}
+        \end{itemize}
+    \column{0.5\textwidth}
+        \begin{description}
+            \item[Key] Value
+        \end{description}
+
+        \begin{enumerate}
+            \item numbered list
+        \end{enumerate}
+\end{columns}
+\end{frame}
+
+\begin{frame}{Blocks}
+    \begin{block}{Block}
+        \begin{itemize}
+            \item<1-> First item
+            \item<2-> Second item
+        \end{itemize}
+    \end{block}
+
+    \begin{alertblock}{Alert block}
+        \begin{itemize}
+            \item<1-> First item
+            \item<2-> Second item
+        \end{itemize}
+    \end{alertblock}
+
+    \begin{exampleblock}{Example block}
+        \begin{itemize}
+            \item<1-> First item
+            \item<2-> Second item
+        \end{itemize}
+    \end{exampleblock}
+\end{frame}
+
+\subsection{Media}
+
+\begin{frame}
+    {Sample image}
+    \begin{center}
+        \includegraphics[height=0.75\textheight]{example-image-a}
+    \end{center}
+    \only<2>{Text only visible on second slide}
+\end{frame}
+
+\begin{frame}
+    {Sample video}
+    \begin{center}
+        \animategraphics[width=\linewidth, autoplay, loop, controls={play, step, stop}, buttonsize=1em, trim=0 250 0 150]{5}{gifs/sample/frame_}{0}{3}
+        % 5 is the frame rate
+        % convert the gif/video to png frames using ffmpeg
+        % to view the video, use adobe acrobat reader or okular
+    \end{center}
+\end{frame}
+
+\section*{}
+\begin{frame}
+    Frame without section
+\end{frame}
+
+\end{document}
