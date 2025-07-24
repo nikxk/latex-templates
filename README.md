@@ -19,3 +19,9 @@ Beamer: [Theme Matrix](https://mpetroff.net/files/beamer-theme-matrix/) | [Beame
 ### Miscellaneous
 - [Printout of images](./miscellaneous/image_printout/)
 - [Printout of passport size images](./miscellaneous/visa_pic_print/)
+
+## Installation
+[TeXlive](https://www.tug.org/texlive/quickinstall.html) is quick to get running. Installing it in `~/tools/` may be cleaner. The medium-schema may be sufficient, with these add-ons for beamer:
+```bash
+ tlmgr install mwe fontawesome ocgx2 zref media9 animate
+```
